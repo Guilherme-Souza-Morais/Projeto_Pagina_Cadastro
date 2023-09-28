@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        L<title>Pagina De Cadastramento</title>
+        <title>Pagina De Cadastramento</title>
+<!-- Cabeça Do Codigo Onde Fica o Cabeçalho Da Pagina -->
+    </head> 
+    <style>
+        body {
+            background-color: lightcyan;
+        }
 
-    </head>
+       h1 {color: rgb(0, 0, 0);
+        text-align: center;
+        font-style: verdana;
+        font-size: 30;
+
+       }
+    /* Essa é a Parte Onde Muda o Estilo Da Pagina, Deixando ela mais Refinada é mais Bonita */
+    </style>
     <body>
-        <h1>Login</h1>
+        <!-- Essa Parte é O Corpo Do Codigo e Uma das Partes Principais -->
+        <h1>Cadastramento</h1>
+        <form action="/Cadastro_Sucesso.html" method="post">
+            <label for="fname">Nome:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="pwd">Senha:</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
+    <label for="cpwd">Confirmar Senha:</label><br>
+    <input type="password" id="cpwd" name="cpwd"><br>
+   <br> <input type="submit" value="Cadastrar">
+<!-- Essa Parte é onde e realizado a parte de inserção de senha e usuario;
+     é Onde os dados serão enviados para o banco de dados -->
+        </form>
     </body>
+    
 </html>
